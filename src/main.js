@@ -12,6 +12,7 @@ import {
   Workflow,
   createIcons,
 } from "lucide";
+import { applyLanguage, availableLanguages } from "./i18n.js";
 
 gsap.registerPlugin(ScrollTrigger);
 createIcons({
@@ -28,6 +29,19 @@ createIcons({
 });
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const savedLanguage = localStorage.getItem("narrative-product-design-language");
+const browserLanguage = navigator.language?.toLowerCase().startsWith("ja")
+  ? "ja"
+  : navigator.language?.toLowerCase().startsWith("en")
+    ? "en"
+    : "zh";
+const initialLanguage = availableLanguages.includes(savedLanguage) ? savedLanguage : browserLanguage;
+
+applyLanguage(initialLanguage);
+
+document.querySelectorAll("[data-lang]").forEach((button) => {
+  button.addEventListener("click", () => applyLanguage(button.dataset.lang));
+});
 
 document.querySelectorAll(".demo-tab").forEach((tab) => {
   tab.addEventListener("click", () => {

@@ -5,99 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="一套把叙事化表达融入产品设计的 AI Skill 与方法论。"
+      content="一套把叙事感落到产品细节里的方法和 AI 技能包。"
+      data-i18n-content="meta.description"
     />
-    <title>叙事化产品设计工作流</title>
+    <link rel="icon" href="/assets/story-mark.svg" type="image/svg+xml" />
+    <title data-i18n-title="meta.title">叙事化产品设计工作流</title>
   </head>
   <body>
-    <header class="site-header" aria-label="主导航">
-      <a class="brand-mark" href="#top" aria-label="回到顶部">
-        <span>NPD</span>
-        <span>叙事化产品设计</span>
+    <header class="site-header" aria-label="主导航" data-i18n-aria="nav.main">
+      <a class="brand-mark" href="#top" aria-label="回到顶部" data-i18n-aria="nav.home">
+        <span class="brand-symbol" aria-hidden="true">
+          <img src="/assets/story-mark.svg" alt="" />
+        </span>
+        <span data-i18n="brand.name">叙事化产品设计</span>
       </a>
-      <nav class="nav-links" aria-label="页面导航">
-        <a href="#method">方法</a>
-        <a href="#skill">Skill</a>
-        <a href="#demos">Demo</a>
-        <a href="#download">下载</a>
-      </nav>
+      <div class="header-tools">
+        <nav class="nav-links" aria-label="页面导航" data-i18n-aria="nav.page">
+          <a href="#method" data-i18n="nav.method">方法</a>
+          <a href="#skill" data-i18n="nav.skill">技能包</a>
+          <a href="#demos" data-i18n="nav.examples">样例</a>
+          <a href="#download" data-i18n="nav.download">下载</a>
+        </nav>
+        <div class="language-switch" aria-label="语言切换" data-i18n-aria="lang.label">
+          <button type="button" data-lang="zh" class="active">中</button>
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="ja">日</button>
+        </div>
+      </div>
     </header>
 
     <main id="top">
       <section class="hero-section" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Narrative Product Design Skill</p>
-          <h1 id="hero-title">让产品像一个会被记住的故事。</h1>
-          <p class="hero-lede">
-            从第一眼的辨识度，到第一百天仍然被照料的感觉。这里是一套给 AI 使用的叙事化产品设计方法论、Skill 和可验证工作流。
+          <p class="eyebrow" data-i18n="hero.kicker">给产品设计师的 AI 技能包</p>
+          <h1 id="hero-title" data-i18n="hero.title">让产品，慢慢长出自己的故事。</h1>
+          <p class="hero-lede" data-i18n="hero.lede">
+            不是写一段宏大设定，也不是把按钮改成段子。先想清楚角色、语气和关键时刻，再让文案、动效、空状态和提醒都说同一种话。
           </p>
-          <div class="hero-actions" aria-label="主要操作">
+          <div class="hero-actions" aria-label="主要操作" data-i18n-aria="hero.actions">
             <a class="button button-primary" href="/downloads/narrative-product-design-skill.zip" download>
               <i data-lucide="download"></i>
-              下载 Skill
+              <span data-i18n="cta.download">下载技能包</span>
             </a>
             <a class="button button-secondary" href="#demos">
               <i data-lucide="play"></i>
-              看 Demo
+              <span data-i18n="cta.examples">看三个样例</span>
             </a>
           </div>
         </div>
         <figure class="hero-visual reveal-card">
-          <img src="/assets/hero-story-map.png" alt="叙事化产品设计的故事地图" />
-          <figcaption>一套隐藏在产品细节背后的故事地图。</figcaption>
+          <img src="/assets/hero-story-map.png" alt="叙事化产品设计的故事地图" data-i18n-alt="hero.imageAlt" />
+          <figcaption data-i18n="hero.caption">故事不用一次讲完，但每个细节都要对得上。</figcaption>
         </figure>
       </section>
 
       <section class="opening-band" aria-labelledby="opening-title">
         <div class="narrow">
-          <p class="section-kicker">问题不是缺少灵感</p>
-          <h2 id="opening-title">真正难的是：把灵感变成可重复执行的产品系统。</h2>
-          <p>
-            很多令人难忘的产品都有一个共同点：它们不是在某个角落突然“有趣”一下，而是让命名、角色、动效、奖励、空状态、错误状态都服务于同一套体验设定。
+          <p class="section-kicker" data-i18n="opening.kicker">先把话说实</p>
+          <h2 id="opening-title" data-i18n="opening.title">灵感不难，难的是每次都能做对。</h2>
+          <p data-i18n="opening.body">
+            很多产品被记住，不是靠一句漂亮口号，而是靠反复出现的细节：按钮怎么叫，失败时怎么说，完成时怎么鼓励，过了几天再回来时又怎么接上。
           </p>
         </div>
       </section>
 
       <section class="case-section" aria-labelledby="case-title">
         <div class="section-heading">
-          <p class="section-kicker">参考并不是复制</p>
-          <h2 id="case-title">四类线索，拼出叙事化设计的骨架。</h2>
+          <p class="section-kicker" data-i18n="cases.kicker">参考不是照抄</p>
+          <h2 id="case-title" data-i18n="cases.title">四个例子，说明叙事感可以落在哪里。</h2>
         </div>
         <div class="case-layout">
           <figure class="case-wall reveal-card">
-            <img src="/assets/case-wall.png" alt="Duolingo、Zelda、Twitter、Dribbble 的叙事设计线索墙" />
+            <img src="/assets/case-wall.png" alt="多邻国、塞尔达、Twitter、Dribbble 的叙事设计线索墙" data-i18n-alt="cases.imageAlt" />
           </figure>
-          <div class="case-notes" aria-label="案例要点">
+          <div class="case-notes" aria-label="案例要点" data-i18n-aria="cases.notes">
             <article>
               <span class="case-index">01</span>
-              <h3>角色进入产品日常</h3>
-              <p>Duolingo 的角色体系不只在品牌物料里出现，也进入课程、故事、声音和激励节点。</p>
+              <h3 data-i18n="cases.duolingo.title">角色要进到日常使用里</h3>
+              <p data-i18n="cases.duolingo.body">多邻国厉害的地方，不是有一只绿色吉祥物，而是角色的性格会反复出现在课程、故事、声音和激励节点里。</p>
               <a href="https://blog.duolingo.com/building-character/" target="_blank" rel="noreferrer">
-                来源 <i data-lucide="arrow-up-right"></i>
+                <span data-i18n="link.source">来源</span> <i data-lucide="arrow-up-right"></i>
               </a>
             </article>
             <article>
               <span class="case-index">02</span>
-              <h3>世界观压进每个系统</h3>
-              <p>Zelda 的冒险感来自封面、地图、环境、物理反馈和探索节奏共同完成的体验承诺。</p>
+              <h3 data-i18n="cases.zelda.title">世界观要能支撑系统</h3>
+              <p data-i18n="cases.zelda.body">塞尔达的冒险感不只在封面上。地图、环境反馈、装备和探索节奏都在反复告诉你：你正在一片旷野里自己决定方向。</p>
               <a href="https://www.zelda.com/breath-of-the-wild/" target="_blank" rel="noreferrer">
-                来源 <i data-lucide="arrow-up-right"></i>
+                <span data-i18n="link.source">来源</span> <i data-lucide="arrow-up-right"></i>
               </a>
             </article>
             <article>
               <span class="case-index">03</span>
-              <h3>命名就是最轻的世界观</h3>
-              <p>Twitter 曾经的 bird、tweet、retweet，让传播行为和品牌形象天然咬合。</p>
+              <h3 data-i18n="cases.twitter.title">命名是最省力的叙事</h3>
+              <p data-i18n="cases.twitter.body">旧版 Twitter 把小鸟、发声、转发放在同一套隐喻里。用户不需要读说明，也能感觉到这个产品在讲“传播”。</p>
               <a href="https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/downloads/twitter-external-brand-guidelines-01272021.pdf" target="_blank" rel="noreferrer">
-                来源 <i data-lucide="arrow-up-right"></i>
+                <span data-i18n="link.source">来源</span> <i data-lucide="arrow-up-right"></i>
               </a>
             </article>
             <article>
               <span class="case-index">04</span>
-              <h3>社区动作也能被隐喻统一</h3>
-              <p>Dribbble 的 shot、rebound 等词，把作品发布与延展放进篮球语境。</p>
+              <h3 data-i18n="cases.dribbble.title">社区动作也可以有手感</h3>
+              <p data-i18n="cases.dribbble.body">Dribbble 把作品叫 shot，把延展创作叫 rebound。篮球隐喻让“发布作品”这件事多了一点轻松的参与感。</p>
               <a href="https://dribbble.com/shots/582680-Rebound-Me" target="_blank" rel="noreferrer">
-                来源 <i data-lucide="arrow-up-right"></i>
+                <span data-i18n="link.source">来源</span> <i data-lucide="arrow-up-right"></i>
               </a>
             </article>
           </div>
@@ -106,71 +117,71 @@
 
       <section class="method-section" id="method" aria-labelledby="method-title">
         <div class="sticky-copy">
-          <p class="section-kicker">方法论</p>
-          <h2 id="method-title">Narrative OS：六层叙事操作系统。</h2>
-          <p>
-            它先定义用户在产品里“是谁”，再把隐喻、角色、场景和表达地图落到每一个关键触点。
+          <p class="section-kicker" data-i18n="method.kicker">方法</p>
+          <h2 id="method-title" data-i18n="method.title">先问六个问题，再动文案和界面。</h2>
+          <p data-i18n="method.body">
+            这套方法不急着写金句。它先把产品到底帮谁、在什么时刻帮、用什么语气帮想清楚，再决定哪些地方需要有故事感。
           </p>
         </div>
-        <div class="method-stack" aria-label="六层模型">
+        <div class="method-stack" aria-label="六层模型" data-i18n-aria="method.stack">
           <article>
             <span>01</span>
-            <h3>Product Truth</h3>
-            <p>用户从什么旧状态，走向什么新状态。</p>
+            <h3 data-i18n="method.cards.truth.title">产品真相</h3>
+            <p data-i18n="method.cards.truth.body">用户原来卡在哪里，用完之后应该变成什么样。</p>
           </article>
           <article>
             <span>02</span>
-            <h3>Role Contract</h3>
-            <p>用户在产品里扮演探索者、园丁、修复者还是学徒。</p>
+            <h3 data-i18n="method.cards.role.title">用户角色</h3>
+            <p data-i18n="method.cards.role.body">用户在这里是探索者、修复者、学徒，还是照看长期目标的人。</p>
           </article>
           <article>
             <span>03</span>
-            <h3>World Metaphor</h3>
-            <p>把抽象流程变成可以延展的世界隐喻。</p>
+            <h3 data-i18n="method.cards.metaphor.title">世界隐喻</h3>
+            <p data-i18n="method.cards.metaphor.body">把抽象流程变成一个能继续长下去的比喻。</p>
           </article>
           <article>
             <span>04</span>
-            <h3>Cast & Voice</h3>
-            <p>定义角色、系统语气和出场边界。</p>
+            <h3 data-i18n="method.cards.voice.title">角色和语气</h3>
+            <p data-i18n="method.cards.voice.body">决定谁在说话，什么时候出现，什么时候该安静。</p>
           </article>
           <article>
             <span>05</span>
-            <h3>Scene Grammar</h3>
-            <p>让初见、错误、成功、回访都像同一部故事里的场景。</p>
+            <h3 data-i18n="method.cards.scene.title">关键场景</h3>
+            <p data-i18n="method.cards.scene.body">初见、空状态、出错、完成、回访，都要有各自的分寸。</p>
           </article>
           <article>
             <span>06</span>
-            <h3>Expression Map</h3>
-            <p>把设定落到文案、命名、动效、视觉和通知。</p>
+            <h3 data-i18n="method.cards.map.title">表达地图</h3>
+            <p data-i18n="method.cards.map.body">把设定落到命名、文案、动效、通知和品牌细节里。</p>
           </article>
         </div>
       </section>
 
       <section class="workflow-section" aria-labelledby="workflow-title">
         <figure class="workflow-visual reveal-card">
-          <img src="/assets/method-spine.png" alt="叙事化产品设计工作流：诊断、生成、选择、应用、验证" />
+          <img src="/assets/method-spine.png" alt="叙事化产品设计工作流：诊断、生成、选择、应用、验证" data-i18n-alt="workflow.imageAlt" />
         </figure>
         <div>
-          <p class="section-kicker">给 AI 的工作流</p>
-          <h2 id="workflow-title">从 brief 到可执行文件，而不是停在概念稿。</h2>
+          <p class="section-kicker" data-i18n="workflow.kicker">给 AI 跑的流程</p>
+          <h2 id="workflow-title" data-i18n="workflow.title">从一句产品说明，到能落地的文案和界面细节。</h2>
           <ol class="workflow-list">
-            <li><span>诊断</span>抽取产品真相、用户焦虑、长期关系。</li>
-            <li><span>生成</span>给出 3-5 个真正不同的叙事领地。</li>
-            <li><span>评分</span>按记忆点、关怀潜力、风险和成本自动选择。</li>
-            <li><span>建档</span>生成叙事圣经、表达地图、文案前后对比。</li>
-            <li><span>应用</span>把选中的方向落到界面、状态、通知和动效。</li>
+            <li><span data-i18n="workflow.steps.diagnose.title">诊断</span><span data-i18n="workflow.steps.diagnose.body">先弄清产品帮用户完成什么变化。</span></li>
+            <li><span data-i18n="workflow.steps.generate.title">发散</span><span data-i18n="workflow.steps.generate.body">生成 3 到 5 个真正不同的叙事方向。</span></li>
+            <li><span data-i18n="workflow.steps.score.title">选择</span><span data-i18n="workflow.steps.score.body">按记忆点、长期关怀、风险和成本打分。</span></li>
+            <li><span data-i18n="workflow.steps.document.title">建档</span><span data-i18n="workflow.steps.document.body">写出叙事说明、表达地图和文案前后对比。</span></li>
+            <li><span data-i18n="workflow.steps.apply.title">应用</span><span data-i18n="workflow.steps.apply.body">把选中的方向落到页面、状态、提醒和动效里。</span></li>
           </ol>
         </div>
       </section>
 
       <section class="skill-section" id="skill" aria-labelledby="skill-title">
         <div class="section-heading">
-          <p class="section-kicker">交付形态</p>
-          <h2 id="skill-title">一个可以交给 AI 的 Skill。</h2>
+          <p class="section-kicker" data-i18n="skill.kicker">交付物</p>
+          <h2 id="skill-title" data-i18n="skill.title">一个可以交给 AI 执行的技能包。</h2>
         </div>
         <div class="skill-grid">
-          <div class="terminal-panel reveal-card" aria-label="Skill 输出示意">
-            <img src="/assets/skill-console.png" alt="AI Skill 生成叙事文件的终端示意" />
+          <div class="terminal-panel reveal-card" aria-label="技能包输出示意" data-i18n-aria="skill.console">
+            <img src="/assets/skill-console.png" alt="技能包生成叙事文件的终端示意" data-i18n-alt="skill.imageAlt" />
           </div>
           <div class="file-list">
             <a href="https://github.com/yanghaoleng/narrative-product-design-workflow/blob/main/docs/methodology.md" target="_blank" rel="noreferrer"><i data-lucide="book-open"></i>docs/methodology.md</a>
@@ -183,66 +194,70 @@
 
       <section class="demo-section" id="demos" aria-labelledby="demo-title">
         <div class="section-heading">
-          <p class="section-kicker">压测样例</p>
-          <h2 id="demo-title">同一套方法，面对不同风险，语气会自动变。</h2>
+          <p class="section-kicker" data-i18n="demos.kicker">三个小样例</p>
+          <h2 id="demo-title" data-i18n="demos.title">同一套方法，遇到不同产品，语气会变。</h2>
         </div>
-        <div class="demo-tabs" role="tablist" aria-label="Demo tabs">
-          <button class="demo-tab active" type="button" data-demo="garden">习惯教练</button>
-          <button class="demo-tab" type="button" data-demo="repair">Bug Tracker</button>
-          <button class="demo-tab" type="button" data-demo="harbor">现金流规划</button>
+        <div class="demo-tabs" role="tablist" aria-label="样例切换" data-i18n-aria="demos.tabs">
+          <button class="demo-tab active" type="button" data-demo="garden" data-i18n="demos.tabs.garden">习惯教练</button>
+          <button class="demo-tab" type="button" data-demo="repair" data-i18n="demos.tabs.repair">修 Bug 工具</button>
+          <button class="demo-tab" type="button" data-demo="harbor" data-i18n="demos.tabs.harbor">现金流规划</button>
         </div>
         <div class="demo-panels">
           <article class="demo-panel active" data-panel="garden">
             <div>
-              <p class="label">Before</p>
-              <blockquote>You missed your habit today. Try again tomorrow.</blockquote>
+              <p class="label" data-i18n="demo.before">原文</p>
+              <blockquote data-i18n="demos.garden.before">今天没打卡，明天再试。</blockquote>
             </div>
             <div>
-              <p class="label">After</p>
-              <blockquote>Today got crowded. Your ritual is still here when you return.</blockquote>
+              <p class="label" data-i18n="demo.after">改后</p>
+              <blockquote data-i18n="demos.garden.after">今天有点满。这个小习惯还在，回来就能接上。</blockquote>
             </div>
-            <p>选择 Small Garden，因为它能把长期坚持从“被监督”变成“被照看”。</p>
+            <p data-i18n="demos.garden.note">选择“小花园”方向，因为它把坚持从“被监督”改成“被照看”，错过一天也不会让人有负罪感。</p>
           </article>
           <article class="demo-panel" data-panel="repair">
             <div>
-              <p class="label">Before</p>
-              <blockquote>No issues found.</blockquote>
+              <p class="label" data-i18n="demo.before">原文</p>
+              <blockquote data-i18n="demos.repair.before">暂无问题。</blockquote>
             </div>
             <div>
-              <p class="label">After</p>
-              <blockquote>The bay is clear. New signals will land here.</blockquote>
+              <p class="label" data-i18n="demo.after">改后</p>
+              <blockquote data-i18n="demos.repair.after">维修台现在是空的。新信号来了会放到这里。</blockquote>
             </div>
-            <p>选择 Repair Bay，因为它让团队协作有共享空间，但不牺牲工具效率。</p>
+            <p data-i18n="demos.repair.note">选择“维修台”方向，因为团队工具需要有共同空间，但不能为了有趣牺牲效率。</p>
           </article>
           <article class="demo-panel" data-panel="harbor">
             <div>
-              <p class="label">Before</p>
-              <blockquote>Low balance warning.</blockquote>
+              <p class="label" data-i18n="demo.before">原文</p>
+              <blockquote data-i18n="demos.harbor.before">余额不足提醒。</blockquote>
             </div>
             <div>
-              <p class="label">After</p>
-              <blockquote>Your projected cushion drops below 14 days in late July.</blockquote>
+              <p class="label" data-i18n="demo.after">改后</p>
+              <blockquote data-i18n="demos.harbor.after">按现在的节奏，到 7 月下旬，安全垫会低于 14 天。</blockquote>
             </div>
-            <p>选择 Harbor Ledger，但在风险提示里让隐喻退后，让事实站到前面。</p>
+            <p data-i18n="demos.harbor.note">选择“港口账本”方向，但在财务风险提示里让隐喻退后，让数字、日期和下一步站到前面。</p>
           </article>
         </div>
       </section>
 
       <section class="download-section" id="download" aria-labelledby="download-title">
         <div class="download-copy">
-          <p class="section-kicker">最后交给工作流</p>
-          <h2 id="download-title">把“叙事化”从灵感，变成每次设计都能调用的步骤。</h2>
-          <p>
-            下载 Skill 后，把它放进 AI/Codex 的技能目录，或直接把 Skill 文本提供给你的设计代理。它会生成叙事领地、自动选择、写文档，并把选中的叙事方案应用到产品细节里。
+          <p class="section-kicker" data-i18n="download.kicker">最后交给工具</p>
+          <h2 id="download-title" data-i18n="download.title">把叙事化从灵感，变成一套能复用的检查表。</h2>
+          <p data-i18n="download.body">
+            下载后可以放进 Codex 的技能目录，也可以把技能包文本交给你的设计代理。它会先生成几个叙事方向，再自动选择一套最合适的方案，最后把方案写进文案和界面细节里。
           </p>
+          <div class="install-strip" aria-label="命令行安装状态" data-i18n-aria="download.installAria">
+            <span data-i18n="download.npxLabel">不用打开 GitHub，复制这行就能安装：</span>
+            <code>npx --yes https://narrative-product-design-workflow.vercel.app/downloads/narrative-product-design-skill-0.1.0.tgz</code>
+          </div>
           <div class="hero-actions">
             <a class="button button-primary" href="/downloads/narrative-product-design-skill.zip" download>
               <i data-lucide="download"></i>
-              下载 Skill 包
+              <span data-i18n="cta.downloadPackage">下载技能包</span>
             </a>
             <a class="button button-secondary" href="https://github.com/yanghaoleng/narrative-product-design-workflow" target="_blank" rel="noreferrer">
               <i data-lucide="github"></i>
-              GitHub 仓库
+              <span data-i18n="cta.repo">查看源码</span>
             </a>
           </div>
         </div>

@@ -1,0 +1,22 @@
+{
+  "name": "narrative-product-design-skill",
+  "version": "0.1.0",
+  "description": "Install the narrative product design Codex skill from the command line.",
+  "type": "module",
+  "bin": {
+    "narrative-product-design-skill": "./bin/install.mjs"
+  },
+  "files": [
+    "bin",
+    "skill",
+    "README.md"
+  ],
+  "keywords": [
+    "codex",
+    "skill",
+    "product-design",
+    "narrative-design",
+    "ux-writing"
+  ],
+  "license": "MIT"
+}

@@ -63,22 +63,27 @@ img {
 }
 
 .brand-mark,
-.nav-links {
+.nav-links,
+.header-tools,
+.language-switch {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.brand-mark span:first-child {
+.brand-symbol {
   display: grid;
   width: 40px;
   height: 40px;
   place-items: center;
   border-radius: 999px;
   background: var(--green);
-  color: var(--ink);
-  font-size: 0.78rem;
-  font-weight: 850;
+  overflow: hidden;
+}
+
+.brand-symbol img {
+  width: 40px;
+  height: 40px;
 }
 
 .brand-mark span:last-child {
@@ -96,6 +101,33 @@ img {
 .nav-links a:hover {
   background: rgba(255, 255, 255, 0.12);
   color: var(--white);
+}
+
+.language-switch {
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.language-switch button {
+  min-width: 34px;
+  height: 32px;
+  padding: 0 9px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.language-switch button.active {
+  background: var(--green);
+  color: var(--ink);
 }
 
 .hero-section {
@@ -134,20 +166,20 @@ p {
 }
 
 h1 {
-  max-width: 9.5ch;
+  max-width: 10.6ch;
   margin-bottom: 0;
-  font-size: clamp(4.6rem, 10vw, 9.6rem);
+  font-size: clamp(3.7rem, 8.6vw, 7.7rem);
   font-weight: 900;
-  line-height: 0.88;
+  line-height: 1.04;
   letter-spacing: 0;
 }
 
 h2 {
   max-width: 12ch;
   margin-bottom: 0;
-  font-size: clamp(2.8rem, 6vw, 6.8rem);
+  font-size: clamp(2.5rem, 5.4vw, 5.9rem);
   font-weight: 900;
-  line-height: 0.95;
+  line-height: 1.04;
   letter-spacing: 0;
 }
 
@@ -399,9 +431,14 @@ h3 {
   line-height: 1.58;
 }
 
-.workflow-list span {
+.workflow-list li > span:first-child {
   color: var(--ink);
   font-weight: 900;
+}
+
+.workflow-list li > span:last-child {
+  color: rgba(20, 20, 19, 0.72);
+  font-weight: 500;
 }
 
 .skill-section {
@@ -533,6 +570,31 @@ blockquote {
   color: rgba(20, 20, 19, 0.72);
 }
 
+.install-strip {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  max-width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0 22px;
+  border: 1px solid rgba(20, 20, 19, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.38);
+  color: rgba(20, 20, 19, 0.74);
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+
+.install-strip code {
+  padding: 5px 8px;
+  border-radius: 6px;
+  background: var(--ink);
+  color: var(--white);
+  font-family: "SF Mono", "Menlo", monospace;
+  font-size: 0.86rem;
+}
+
 .reveal-card {
   will-change: transform;
 }
@@ -555,8 +617,8 @@ blockquote {
   }
 
   h1 {
-    max-width: 8.6ch;
-    font-size: clamp(3.8rem, 17vw, 6rem);
+    max-width: 9.4ch;
+    font-size: clamp(3.2rem, 14vw, 5.5rem);
   }
 
   .sticky-copy {
@@ -566,12 +628,19 @@ blockquote {
 }
 
 @media (max-width: 640px) {
-  .brand-mark span:last-child {
+  .brand-mark span:last-child,
+  .nav-links {
     display: none;
   }
 
   .site-header {
     width: calc(100% - 22px);
+  }
+
+  .language-switch button {
+    min-width: 30px;
+    height: 30px;
+    padding: 0 7px;
   }
 
   .hero-section,

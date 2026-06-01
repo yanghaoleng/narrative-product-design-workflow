@@ -9,6 +9,7 @@
     "preview": "vite preview --host 0.0.0.0",
     "render:assets": "node tools/render-assets.js",
     "package:skill": "cd skills && zip -r ../public/downloads/narrative-product-design-skill.zip narrative-product-design -x \"*.DS_Store\"",
+    "pack:npm-skill": "npm pack ./packages/narrative-product-design-skill --pack-destination ./public/downloads",
     "verify": "node tools/verify-page.js"
   },
   "dependencies": {

@@ -11,6 +11,7 @@
 - `demos/`：三组 before/after 示例，用来验证 Skill 的效果。
 - `index.html` + `src/`：GSAP 滚动发布页。
 - `public/downloads/narrative-product-design-skill.zip`：发布页提供下载的 Skill 包。
+- `packages/narrative-product-design-skill/`：可发布到 npm 的 `npx` 安装包。
 
 ## 本地运行
 
@@ -18,7 +19,29 @@
 npm install
 npm run render:assets
 npm run package:skill
+npm run pack:npm-skill
 npm run dev
+```
+
+## 命令行安装包
+
+无需打开 GitHub，也可以直接用发布页上的 tarball URL 安装：
+
+```bash
+npx --yes https://narrative-product-design-workflow.vercel.app/downloads/narrative-product-design-skill-0.1.0.tgz
+```
+
+包名 `narrative-product-design-skill` 也已预留为项目内 npm 包目录。若之后发布到 npm registry，用户可以运行更短的命令：
+
+```bash
+npx narrative-product-design-skill
+```
+
+当前机器尚未登录 npm。登录后可执行：
+
+```bash
+cd packages/narrative-product-design-skill
+npm publish --access public
 ```
 
 发布前检查：
